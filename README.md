@@ -1,4 +1,4 @@
-# BalenaOS builder
+# BalenaOS builder (Version 0.0.1)
 
 This repo builds a BalenaOS builder image which is then used to build a custom
 BalenaOS.
@@ -23,6 +23,14 @@ $ git clone --recursive https://github.com/balena-os/balena-intel.git
 ```
 
 ## Use the balena-builder container to build BalenaOS
+
+Build for the current targe machine intel-nuc
+
+```zsh
+$ docker run --rm -it --privileged -v /build:/home/build balena-builder ./balena-yocto-scripts/build/barys --rm-work -d --machine intel-nuc
+```
+
+Alternatively build all Balena supported platforms
 
 ```zsh
 $ docker run --rm -it --privileged -v $(pwd)/build/balena-intel:/home/build balena-builder
