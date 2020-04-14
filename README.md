@@ -44,3 +44,16 @@ This will take a while
 
 This process is based on alexgg's [docker-balena](https://github.com/alexgg/docker-balena)
 
+Relevant balenaOS forum posts and documentation
+
+- https://forums.balena.io/t/missing-usbmon-module/5445
+- https://forums.balena.io/t/can-drivers-in-nuc-image/89143
+
+
+# Patch the build
+
+ balena-intel/layers/meta-balena-genericx86/recipes-kernel/linux/linux-yocto_%.bbappend
+
+# Notes 
+
+~/linux-src/linux/drivers/net/can/usb
