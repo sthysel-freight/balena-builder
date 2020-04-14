@@ -52,8 +52,11 @@ Relevant balenaOS forum posts and documentation
 
 # Patch the build
 
- balena-intel/layers/meta-balena-genericx86/recipes-kernel/linux/linux-yocto_%.bbappend
+
+```zsh
+$vim balena-intel/layers/meta-balena-genericx86/recipes-kernel/linux/linux-yocto_%.bbappend
+```zsh
 
 # Notes 
 
-~/linux-src/linux/drivers/net/can/usb
+Linux CAN drivers are in `~/linux-src/linux/drivers/net/can/usb` in Linux kernel source tree.
