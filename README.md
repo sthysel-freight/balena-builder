@@ -1,5 +1,7 @@
 # BalenaOS builder (Version 0.0.1)
 
+![Shark Horse](pics/shorse.jpg)
+
 This repo builds a BalenaOS builder image which is then used to build a custom
 BalenaOS.
 
