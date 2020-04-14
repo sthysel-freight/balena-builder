@@ -68,7 +68,7 @@ ENV LANG en_US.UTF-8
 
 # Install docker in docker
 ARG DIND_COMMIT=52379fa76dee07ca038624d639d9e14f4fb719ff
-ENV DOCKER_EXTRA_OPTS '--storage-driver=overlay'
+ENV DOCKER_EXTRA_OPTS '--storage-driver=overlay2'
 RUN curl -fL -o /usr/local/bin/dind "https://raw.githubusercontent.com/moby/moby/${DIND_COMMIT}/hack/dind" && \
     chmod +x /usr/local/bin/dind
 COPY entrypoint.sh /bin/entrypoint.sh
